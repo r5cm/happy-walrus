@@ -34,10 +34,10 @@ RUN cd /models/research && protoc object_detection/protos/*.proto --python_out=.
 # apt update
 # apt-get install wget
 # apt-get install zip
-# wget "http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz"
-# tar xvzf faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+# apt-get install vim
 # wget -O ./windows_10_tutorial.zip "https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/archive/master.zip"
 # unzip windows_10_tutorial.zip
 # rm TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10-master/README.md
 # mv TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10-master/* .
+# cd /
 # ~/.local/bin/jupyter-notebook --ip=0.0.0.0 --allow-root
