@@ -5,3 +5,8 @@ data/
 annotations/
 Annotations/
 output*
+*ckpt*
+train.record
+test.record
+*.tar.gz
+*.pb

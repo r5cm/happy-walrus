@@ -1,0 +1,9 @@
+item {
+  id: 1
+  name: 'chair'
+}
+
+item {
+  id: 2
+  name: 'stove/oven'
+}
