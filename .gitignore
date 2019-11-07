@@ -10,3 +10,6 @@ train.record
 test.record
 *.tar.gz
 *.pb
+desktop.ini
+*tfevents*
+*ckpt*

@@ -24,6 +24,8 @@ RUN pip3 install --user matplotlib
 RUN pip3 install --user pillow
 RUN pip3 install --user pandas
 RUN pip3 install --user opencv-python
+RUN pip3 install --user gdown
+RUN pip3 install -U scikit-learn
 
 # Dowload tensorflow/model files
 RUN apt-get install -y git
