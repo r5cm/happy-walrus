@@ -1,5 +1,6 @@
-# 1. To run container, CD into happy_walrus main folder and run "docker run -it -p 8888:8888 -p 6006:6006 --name tf_1_15_cpu -v $pwd/tensorflow:/walrus tf_1_15_cpu"
-# 2. Inside the container, run "~/.local/bin/jupyter-notebook --ip=0.0.0.0 --allow-root"
+# 1. Cd into root and clone repository: git clone https://github.com/r5cm/happy-walrus.git
+# 2. Run container: "docker run -it -p 8888:8888 -p 6006:6006 --name tf_1_15_cpu -v /happy-walrus:/walrus tf_1_15_cpu"
+# 3. Inside the container, run Jupyter: "~/.local/bin/jupyter-notebook --ip=0.0.0.0 --allow-root"
 
 # FROM tensorflow/tensorflow:latest-py3
 FROM tensorflow/tensorflow:1.15.0-py3
