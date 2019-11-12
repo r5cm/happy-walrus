@@ -31,8 +31,16 @@ FLAGS = flags.FLAGS
 def class_text_to_int(row_label):
     if row_label == 'chair':
         return 1
-    elif row_label == 'stove/oven':
+    elif row_label == 'stove':
         return 2
+    elif row_label == 'stool':
+        return 3
+    elif row_label == 'oven':
+        return 4
+    elif row_label == 'sofa':
+        return 5
+    elif row_label == 'ladder':
+        return 6
     else:
         None
 

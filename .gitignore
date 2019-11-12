@@ -13,3 +13,6 @@ test.record
 desktop.ini
 *tfevents*
 *ckpt*
+*.zip
+base_models/
+base_models/*
