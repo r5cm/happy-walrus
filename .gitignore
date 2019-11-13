@@ -8,7 +8,7 @@ output*
 *ckpt*
 train.record
 test.record
-*.tar.gz
+*.tar.gz*
 *.pb
 desktop.ini
 *tfevents*
