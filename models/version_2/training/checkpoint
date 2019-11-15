@@ -1,2 +1,6 @@
-model_checkpoint_path: "/happy-walrus/models/version_2/training/model.ckpt-0"
-all_model_checkpoint_paths: "/happy-walrus/models/version_2/training/model.ckpt-0"
+model_checkpoint_path: "/happy-walrus/models/version_2/training/model.ckpt-47799"
+all_model_checkpoint_paths: "/happy-walrus/models/version_2/training/model.ckpt-45643"
+all_model_checkpoint_paths: "/happy-walrus/models/version_2/training/model.ckpt-46185"
+all_model_checkpoint_paths: "/happy-walrus/models/version_2/training/model.ckpt-46725"
+all_model_checkpoint_paths: "/happy-walrus/models/version_2/training/model.ckpt-47267"
+all_model_checkpoint_paths: "/happy-walrus/models/version_2/training/model.ckpt-47799"
