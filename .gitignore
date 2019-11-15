@@ -16,3 +16,4 @@ desktop.ini
 *.zip
 base_models/
 base_models/*
+bboxes/

@@ -21,17 +21,18 @@ import cv2
 import numpy as np
 import tensorflow as tf
 import sys
+import re
 
 # This is needed since the notebook is stored in the object_detection folder.
 sys.path.append("..")
 
 # Import utilites
-from utils import label_map_util
-from utils import visualization_utils as vis_util
+from object_detection.utils import label_map_util
+from object_detection.utils import visualization_utils as vis_util
 
 # Name of the directory containing the object detection module we're using
 MODEL_NAME = 'inference_graph'
-IMAGE = 'ADE_train_00010274.jpg'
+IMAGE = 'ADE_train_00000615.jpg'
 IMAGE_NAME = 'images/test/' + IMAGE
 
 # Grab path to current working directory
@@ -48,7 +49,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 2
+NUM_CLASSES = 6
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -87,33 +88,37 @@ detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
 # Number of objects detected
 num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
-# Load image using OpenCV and
-# expand image dimensions to have shape: [1, None, None, 3]
-# i.e. a single-column array, where each item in the column has the pixel RGB value
-image = cv2.imread(PATH_TO_IMAGE)
-image_expanded = np.expand_dims(image, axis=0)
+test_image_path = '/happy-walrus/models/version_2/images/test/'
+list_images = [file for file in os.listdir(test_image_path) if re.search('\.jpg', file)]
+for image_name in list_images:
+    # Load image using OpenCV and
+    # expand image dimensions to have shape: [1, None, None, 3]
+    # i.e. a single-column array, where each item in the column has the pixel RGB value
+    image = cv2.imread(test_image_path + image_name)
+    image_expanded = np.expand_dims(image, axis=0)
+    print(test_image_path + image_name)
 
-# Perform the actual detection by running the model with the image as input
-(boxes, scores, classes, num) = sess.run(
-    [detection_boxes, detection_scores, detection_classes, num_detections],
-    feed_dict={image_tensor: image_expanded})
+    # Perform the actual detection by running the model with the image as input
+    (boxes, scores, classes, num) = sess.run(
+        [detection_boxes, detection_scores, detection_classes, num_detections],
+        feed_dict={image_tensor: image_expanded})
 
-# Draw the results of the detection (aka 'visulaize the results')
+    # Draw the results of the detection (aka 'visulaize the results')
+    vis_util.visualize_boxes_and_labels_on_image_array(
+        image,
+        np.squeeze(boxes),
+        np.squeeze(classes).astype(np.int32),
+        np.squeeze(scores),
+        category_index,
+        use_normalized_coordinates=True,
+        line_thickness=8,
+        min_score_thresh=0.60)
 
-vis_util.visualize_boxes_and_labels_on_image_array(
-    image,
-    np.squeeze(boxes),
-    np.squeeze(classes).astype(np.int32),
-    np.squeeze(scores),
-    category_index,
-    use_normalized_coordinates=True,
-    line_thickness=8,
-    min_score_thresh=0.60)
+    cv2.imwrite('/happy-walrus/models/version_2/evaluation/bboxes/' + image_name[:-4] + '_bbox.jpg', image)
 
 # All the results have been drawn on image. Now display the image.
-cv2.imwrite(IMAGE + '_pred.jpg', image)
-print("Write successful to " + IMAGE + '_pred.jpg')
-cv2.imshow('Object detector', image)
+#print("Write successful to " + IMAGE[:-4] + '_pred.jpg')
+#cv2.imshow('Object detector', image)
 
 # Press any key to close the image
 # cv2.waitKey(0)
