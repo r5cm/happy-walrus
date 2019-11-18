@@ -88,6 +88,7 @@ def create_tf_example(group, path):
         'image/object/bbox/ymax': dataset_util.float_list_feature(ymaxs),
         'image/object/class/text': dataset_util.bytes_list_feature(classes_text),
         'image/object/class/label': dataset_util.int64_list_feature(classes),
+        'image/object/difficult': dataset_util.int64_list_feature([0]*len(xmins)),
     }))
     return tf_example
 
