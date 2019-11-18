@@ -1,4 +1,4 @@
-# 1. To run container, CD into happy_walrus main folder and run "docker run -it -p 8888:8888 -p 6006:6006 --runtime nvidia --name tf_1_15_gpu -v $pwd/tensorflow:/walrus tf_1_15_gpu"
+# 1. To run container, CD into happy_walrus main folder and run "docker run -it -p 8888:8888 -p 6006:6006 --runtime=nvidia --name tf_1_15_gpu -v /happy-walrus:/happy-walrus tf_1_15_gpu"
 # 2. Inside the container, run "~/.local/bin/jupyter-notebook --ip=0.0.0.0 --allow-root"
 
 # FROM tensorflow/tensorflow:latest-py3
