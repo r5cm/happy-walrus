@@ -1,0 +1,7 @@
+PascalBoxes_Precision/mAP@0.5IOU,0.5442753965441911
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/chair,0.6548812202456822
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/ladder,nan
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/oven,0.6502705901868502
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/sofa,0.13484967233324116
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/stool,0.6337156623730517
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/stove,0.6476598375821305
