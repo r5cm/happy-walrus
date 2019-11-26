@@ -31,9 +31,9 @@ from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
 
 # Name of the directory containing the object detection module we're using
-MODEL_NAME = 'inference_graph'
-IMAGE = 'ADE_train_00000615.jpg'
-IMAGE_NAME = 'images/test/' + IMAGE
+#MODEL_NAME = 'inference_graph'
+#IMAGE = 'ADE_train_00000615.jpg'
+#IMAGE_NAME = 'images/test/' + IMAGE
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
@@ -49,7 +49,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 6
+NUM_CLASSES = 10 
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -88,7 +88,7 @@ detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
 # Number of objects detected
 num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
-test_image_path = '/happy-walrus/models/version_2/images/test/'
+test_image_path = '/happy-walrus/models/version_3/images/test/'
 list_images = [file for file in os.listdir(test_image_path) if re.search('\.jpg', file)]
 for image_name in list_images:
     # Load image using OpenCV and
@@ -114,7 +114,7 @@ for image_name in list_images:
         line_thickness=8,
         min_score_thresh=0.60)
 
-    cv2.imwrite('/happy-walrus/models/version_2/evaluation/bboxes/' + image_name[:-4] + '_bbox.jpg', image)
+    cv2.imwrite('/happy-walrus/models/version_3/evaluation/auto_augmentation/bboxes/' + image_name[:-4] + '_bbox.jpg', image)
 
 # All the results have been drawn on image. Now display the image.
 #print("Write successful to " + IMAGE[:-4] + '_pred.jpg')

@@ -1,0 +1,2 @@
+model_checkpoint_path: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-0"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-0"
