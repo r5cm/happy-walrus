@@ -1,2 +1,5 @@
-model_checkpoint_path: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-0"
+model_checkpoint_path: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-15167"
 all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-0"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-3840"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-9537"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inceptionv2/model.ckpt-15167"
