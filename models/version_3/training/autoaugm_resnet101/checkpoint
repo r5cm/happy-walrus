@@ -1,0 +1,4 @@
+model_checkpoint_path: "/happy-walrus/models/version_3/training/autoaugm_resnet101/model.ckpt-6100"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_resnet101/model.ckpt-0"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_resnet101/model.ckpt-2600"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_resnet101/model.ckpt-6100"
