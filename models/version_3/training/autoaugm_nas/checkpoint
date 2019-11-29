@@ -1,0 +1,6 @@
+model_checkpoint_path: "/happy-walrus/models/version_3/training/autoaugm_nas/model.ckpt-45503"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_nas/model.ckpt-44114"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_nas/model.ckpt-44461"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_nas/model.ckpt-44808"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_nas/model.ckpt-45155"
+all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_nas/model.ckpt-45503"
