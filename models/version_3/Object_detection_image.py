@@ -31,30 +31,26 @@ from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
 
 # Name of the directory containing the object detection module we're using
-#MODEL_NAME = 'inference_graph'
-#IMAGE = 'ADE_train_00000615.jpg'
-#IMAGE_NAME = 'images/test/' + IMAGE
+MODEL_NAME = 'autoaugm_nas'
+MODEL_PATH = 'inference_graph/' + MODEL_NAME
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
 
 # Path to frozen detection graph .pb file, which contains the model that is used
 # for object detection.
-PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
+PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_PATH,'frozen_inference_graph.pb')
 
 # Path to label map file
 PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 
 # Path to image
-PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
+#PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 
 # Number of classes the object detector can identify
 NUM_CLASSES = 10 
 
-# Load the label map.
-# Label maps map indices to category names, so that when our convolution
-# network predicts `5`, we know that this corresponds to `king`.
-# Here we use internal utility functions, but anything that returns a
+# Load the label map.  # Label maps map indices to category names, so that when our convolution # network predicts `5`, we know that this corresponds to `king`.  # Here we use internal utility functions, but anything that returns a
 # dictionary mapping integers to appropriate string labels would be fine
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
@@ -114,7 +110,7 @@ for image_name in list_images:
         line_thickness=8,
         min_score_thresh=0.60)
 
-    cv2.imwrite('/happy-walrus/models/version_3/evaluation/auto_augmentation/bboxes/' + image_name[:-4] + '_bbox.jpg', image)
+    cv2.imwrite('/happy-walrus/models/version_3/evaluation/' + MODEL_NAME + '/bboxes/' + image_name[:-4] + '_bbox.jpg', image)
 
 # All the results have been drawn on image. Now display the image.
 #print("Write successful to " + IMAGE[:-4] + '_pred.jpg')
