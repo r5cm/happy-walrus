@@ -1,0 +1,11 @@
+PascalBoxes_Precision/mAP@0.5IOU,0.9284382156044758
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/cabinet,0.9196262324710365
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/chair,0.9068010665956421
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/countertop,0.9140047338596605
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/dishwasher,0.9295151499480386
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/outlet,0.8153174650361292
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/oven,0.957889654408309
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/sofa,1.0
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/stool,0.957698824584641
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/stove,0.9368631934687504
+PascalBoxes_PerformanceByCategory/AP@0.5IOU/utensil,0.9466658356725515
