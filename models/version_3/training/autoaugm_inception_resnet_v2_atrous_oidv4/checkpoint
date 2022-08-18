@@ -1,6 +1,0 @@
-model_checkpoint_path: "/happy-walrus/models/version_3/training/autoaugm_inception_resnet_v2_atrous_oidv4/model.ckpt-87493"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inception_resnet_v2_atrous_oidv4/model.ckpt-82462"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inception_resnet_v2_atrous_oidv4/model.ckpt-83724"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inception_resnet_v2_atrous_oidv4/model.ckpt-84984"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inception_resnet_v2_atrous_oidv4/model.ckpt-86237"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/autoaugm_inception_resnet_v2_atrous_oidv4/model.ckpt-87493"

@@ -1,6 +1,0 @@
-model_checkpoint_path: "/happy-walrus/models/version_3/training/noaugm_resnet101/model.ckpt-200000"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/noaugm_resnet101/model.ckpt-187286"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/noaugm_resnet101/model.ckpt-190871"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/noaugm_resnet101/model.ckpt-194451"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/noaugm_resnet101/model.ckpt-198036"
-all_model_checkpoint_paths: "/happy-walrus/models/version_3/training/noaugm_resnet101/model.ckpt-200000"

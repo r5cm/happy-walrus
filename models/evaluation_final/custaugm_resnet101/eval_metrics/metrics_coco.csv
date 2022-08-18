@@ -1,0 +1,12 @@
+DetectionBoxes_Precision/mAP,0.2805954382722045
+DetectionBoxes_Precision/mAP@.50IOU,0.4712047805673901
+DetectionBoxes_Precision/mAP@.75IOU,0.28445770811024973
+DetectionBoxes_Precision/mAP (small),0.2805954382722045
+DetectionBoxes_Precision/mAP (medium),-1.0
+DetectionBoxes_Precision/mAP (large),-1.0
+DetectionBoxes_Recall/AR@1,0.26438801849771965
+DetectionBoxes_Recall/AR@10,0.41856212462166226
+DetectionBoxes_Recall/AR@100,0.4452269242658963
+DetectionBoxes_Recall/AR@100 (small),0.4452269242658963
+DetectionBoxes_Recall/AR@100 (medium),-1.0
+DetectionBoxes_Recall/AR@100 (large),-1.0

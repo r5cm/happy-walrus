@@ -1,4 +1,0 @@
-
-label_map_path: '/happy-walrus/models/version_3/training/labelmap.pbtxt'
-tf_record_input_reader: { input_path: '/happy-walrus/models/version_3/evaluation/noaugm_resnet101/test_detections.tfrecord-00000-of-00001' }
-

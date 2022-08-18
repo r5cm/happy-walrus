@@ -17,3 +17,6 @@ desktop.ini
 base_models/
 base_models/*
 bboxes/
+.init
+backup_folder/
+model.
